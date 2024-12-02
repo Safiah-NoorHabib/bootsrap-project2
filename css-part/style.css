@@ -26,6 +26,105 @@ body{
 }
 .swich1 input{
     width: 5% !important;
-    height: 20px;
     margin: 10px;
+}
+.dark .light-text{
+    color: white;
+}
+
+.header{
+    padding-top: 90px;
+}
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+ 
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+.header .counter div{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    border-radius: 8px;
+    width: 100px;
+    padding: 15px 0;
+    margin:10px;
+}
+
+.contact hr{
+    width: 10%;
+    height: 10px;
+    background-color: rgb(245, 240, 240);
+    margin: auto;
+}
+.contact .card{
+    border-top: 4px solid #0d6efd;
+    border-bottom: 4px solid #0d6efd;
+    padding: 30px;
+    border-radius: 0.25rem;
+    background: rgb(255, 255, 255, 0.06);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgb(0, 0, 0 / 12%);
+}
+.contact .card i{
+    width: 44px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    background: rgb(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.contact .card i:hover{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+.card textarea{
+    height: 100px;
+}
+
+@media ( max-width : 575px) {
+    .header .counter div{
+        width: 70px;
+        padding: 10px 0;
+        margin:10px;
+    }
+}
+
+.icon i{
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.icon i:hover{
+    background-color: aqua;border-color: aqua;
+    color: black !important;
+
 }
